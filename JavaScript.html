@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Button Click Example</title>
+
+    <style>
+
+        body {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            height: 100vh;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        button {
+
+            margin: 10px;
+
+            padding: 10px 20px;
+
+            font-size: 16px;
+
+        }
+
+        p {
+
+            font-size: 18px;
+
+            margin-top: 20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <h1>Click a Button</h1>
+
+    <button onclick="whichButton(1)">Button 1</button>
+
+    <button onclick="whichButton(2)">Button 2</button>
+
+    <p id="result"></p>
+
+
+
+    <script>
+
+        function whichButton(buttonNumber) {
+
+            const resultElement = document.getElementById("result");
+
+            if (buttonNumber === 1) {
+
+                resultElement.textContent = "You clicked Button 1!";
+
+            } else if (buttonNumber === 2) {
+
+                resultElement.textContent = "You clicked Button 2!";
+
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
+
